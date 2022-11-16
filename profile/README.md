@@ -5,3 +5,7 @@
 
 ### ✉️ Contact Us
 - [Discord Server](https://discord.gg/p7cxhw7E2M) / Our Discord Server
+
+### 👨‍💻 Other projects
+
+- [DivineMC](https://github.com/DivineMC/DivineMC) - Fork of Paper compatible with Spigot plugins, offering best performance for your server.
