@@ -12,3 +12,12 @@ We are a small development team that mainly specializes in software for the Mine
 ### ✉️ Contact Us
 - [Discord Server](https://discord.gg/p7cxhw7E2M) / Our Discord Server
 - [E-Mail](mailto:support@bxteam.gq) / By mail
+
+### ⌚ Projects Progress
+
+We made graphs that show the progress of our developments, **[here](https://docs.google.com/document/d/1SUyBmiN8oULjvML4TekGHnktnAuSQAV49We1QPFAs_4/edit?usp=sharing)** is a list of all graphs
+
+<details>
+  <summary>Example</summary>
+  <img src="https://user-images.githubusercontent.com/76615486/218581968-cab1dc62-7b15-4de1-8eb3-0acb2ff4acb5.png" alt="">
+</details>
