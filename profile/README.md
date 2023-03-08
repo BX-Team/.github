@@ -5,13 +5,14 @@ We are a small development team that mainly specializes in software for the Mine
 
 ### 👨‍💻 Our projects
 - [NDailyRewards](https://github.com/BX-Team/NDailyRewards) - Simple Minecraft plugin that you can reward players for playing on your server!
+- [BXSploit](https://github.com/BX-Team/BXSploit) - A level 7 Lua executor for Roblox.
 - [DivineMC](https://github.com/DivineMC/DivineMC) - Fork of Paper compatible with Spigot plugins, offering best performance for your server.
 - [benkins](https://github.com/NONPLAYT/benkins) - Webpage that provides downloads for compiled GitHub Repositories that use Maven and Gradle.
-- [BXSploit](https://github.com/BX-Team/BXSploit) - A level 7 Lua executor for Roblox.
+- [roblox-cheats](https://github.com/NONPLAYT/roblox-cheats) - A collection of Roblox Executors (cheats).
 
 ### ✉️ Contact Us
 - [Discord Server](https://discord.gg/p7cxhw7E2M) / Our Discord Server
-- [E-Mail](mailto:support@bxteam.gq) / By mail
+- [E-Mail](mailto:support@bxteam.gq) / By E-Mail
 
 ### ⌚ Projects Progress
 
