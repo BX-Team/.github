@@ -5,7 +5,7 @@ We aim to provide a stable and optimized experience for both server owners and p
 
 **Quickstart:**
 - Learn more about our projects on [bxteam.org](https://bxteam.org)
-- Read projects documentation at [docs.bxteam.org](https://docs.bxteam.org)
+- Read projects documentation at [bxteam.org/docs](https://bxteam.org/docs)
 - Join our Discord server to chat with community 👇
 
 <a href="https://discord.gg/p7cxhw7E2M">
