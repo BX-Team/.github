@@ -8,6 +8,6 @@ We aim to provide a stable and optimized experience for both server owners and p
 - Read projects documentation at [bxteam.org/docs](https://bxteam.org/docs)
 - Join our Discord server to chat with community 👇
 
-<a href="https://discord.gg/p7cxhw7E2M">
+<a href="https://discord.gg/qNyybSSPm5">
          <img alt="BX Team Discord" src="https://discord.com/api/guilds/931595732752953375/widget.png?style=banner2">
 </a>
