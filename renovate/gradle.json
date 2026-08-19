@@ -1,0 +1,22 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Renovate policy for BX Team Gradle repositories",
+  "extends": ["github>BX-Team/.github//renovate/default"],
+  "enabledManagers": ["gradle", "gradle-wrapper", "github-actions", "nix"],
+  "packageRules": [
+    {
+      "matchManagers": ["gradle"],
+      "groupName": "gradle dependencies"
+    },
+    {
+      "description": "Never propose a snapshot as an update — Paper/Velocity publish them continuously.",
+      "matchPackageNames": ["**"],
+      "allowedVersions": "!/\\-SNAPSHOT$/"
+    },
+    {
+      "description": "The Gradle wrapper is bumped by hand together with the build scripts it needs.",
+      "matchManagers": ["gradle-wrapper"],
+      "automerge": false
+    }
+  ]
+}

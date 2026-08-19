@@ -1,0 +1,12 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Renovate policy for BX Team Rust repositories",
+  "extends": ["github>BX-Team/.github//renovate/default"],
+  "enabledManagers": ["cargo", "github-actions", "nix"],
+  "packageRules": [
+    {
+      "matchManagers": ["cargo"],
+      "groupName": "cargo dependencies"
+    }
+  ]
+}

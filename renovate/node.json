@@ -1,0 +1,51 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Renovate policy for BX Team JavaScript/TypeScript repositories",
+  "extends": ["github>BX-Team/.github//renovate/default"],
+  "enabledManagers": ["npm", "github-actions", "nix"],
+  "packageRules": [
+    {
+      "description": "The web platform redeploys on every merge, so minor bumps ride in unattended too.",
+      "matchManagers": ["npm"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true
+    },
+    {
+      "groupName": "Vue / Nuxt ecosystem",
+      "matchPackageNames": [
+        "vue",
+        "nuxt",
+        "@nuxt/content",
+        "@nuxt/fonts",
+        "vue-router",
+        "@vueuse/core",
+        "@lucide/vue",
+        "@shikijs/transformers"
+      ]
+    },
+    {
+      "groupName": "Vite & plugins",
+      "matchPackageNames": ["vite", "@vitejs/plugin-vue", "@cloudflare/vite-plugin", "@tailwindcss/vite"]
+    },
+    {
+      "groupName": "Tailwind CSS",
+      "matchPackageNames": ["tailwindcss", "tw-animate-css"]
+    },
+    {
+      "groupName": "Drizzle ORM",
+      "matchPackageNames": ["drizzle-orm", "drizzle-kit"]
+    },
+    {
+      "groupName": "TypeScript & @types",
+      "matchPackageNames": ["typescript", "/^@types//"]
+    },
+    {
+      "groupName": "Cloudflare tooling",
+      "matchPackageNames": ["wrangler", "/^@cloudflare//"]
+    },
+    {
+      "groupName": "Scalar",
+      "matchPackageNames": ["/^@scalar//"]
+    }
+  ]
+}

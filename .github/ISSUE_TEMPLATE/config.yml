@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Discord support
+    url: https://discord.gg/qNyybSSPm5
+    about: Questions, setup help and anything you would rather talk through. RU and EN.
+  - name: 📚 Documentation
+    url: https://bxteam.org/docs
+    about: Guides and reference for the projects that have them.
+  - name: 📋 pastes.dev
+    url: https://pastes.dev
+    about: Paste logs here and link them in your issue instead of truncating them.
+  - name: 🔒 Report a vulnerability
+    url: https://github.com/BX-Team/.github/blob/master/SECURITY.md
+    about: Security issues are reported privately, never as a public issue.

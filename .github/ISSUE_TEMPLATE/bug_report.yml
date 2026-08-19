@@ -1,0 +1,77 @@
+name: Bug report
+description: Something is broken and you can reproduce it
+labels: ["🐛 bug"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time. Fill this in as fully as you can — a report missing
+        the version or the log usually costs a day of back-and-forth before anyone can
+        start on it.
+
+        If you are not sure this is a bug, ask on [our Discord](https://discord.gg/qNyybSSPm5)
+        first — it is faster for both of us.
+
+  - type: input
+    attributes:
+      label: Version
+      description: Which version of the project are you running? A build number or a commit is fine.
+      placeholder: "e.g. 2.1.0, or master @ a1b2c3d"
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: Platform
+      description: |
+        The OS and, where it applies, the server software and Minecraft version
+        (`/version`), or the desktop environment.
+      placeholder: "e.g. Ubuntu 24.04 · Paper 1.21.4 · Java 21"
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: What happens
+      description: What went wrong, and what you expected instead.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. See the error
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: Logs
+      description: |
+        Paste the **full** log or stack trace to [pastes.dev](https://pastes.dev) and
+        link it here. Do not truncate it — the part that gets cut is often the part
+        that matters.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Screenshots or video
+      description: Where a picture is quicker than a paragraph.
+
+  - type: checkboxes
+    attributes:
+      options:
+        - label: I am on the latest release and the issue still happens
+          required: true
+        - label: I searched the existing issues and this is not a duplicate
+          required: true
+
+  - type: textarea
+    attributes:
+      label: Anything else
+      description: Extra context, things you have already ruled out, a workaround you found.

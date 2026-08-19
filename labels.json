@@ -1,0 +1,86 @@
+{
+  "$comment": [
+    "The BX Team label set — see CONVENTIONS.md for the rules behind it.",
+    "Every label name is `<emoji> <lowercase name>`; the emoji is part of the name because it is what stays readable when the sidebar truncates the text.",
+    "`common` goes to every repository. `extra` sections are opt-in per repository through `repositories`.",
+    "`renames` maps a legacy name to its current one — renaming keeps the label attached to every issue and PR that already carries it, so a repository still on plain `bug` is migrated rather than re-tagged by hand.",
+    "Apply with scripts/sync-labels.sh (needs gh + jq)."
+  ],
+
+  "common": [
+    { "name": "🐛 bug", "color": "d73a4a", "description": "Something isn't working" },
+    { "name": "🔧 enhancement", "color": "006B75", "description": "New feature or request" },
+    { "name": "⚡ performance", "color": "FBCA04", "description": "Performance improvements" },
+    { "name": "🧹 refactor", "color": "C5DEF5", "description": "Code cleanup without behaviour changes" },
+    { "name": "📝 documentation", "color": "0075ca", "description": "Improvements or additions to documentation" },
+    { "name": "📄 README", "color": "1D76DB", "description": "Applies to README.md file" },
+    { "name": "⚙️ ci", "color": "6E7781", "description": "Workflows and automation" },
+    { "name": "🔒 security", "color": "A04F39", "description": "Issue is related to security" },
+    { "name": "🔄 dependencies", "color": "658B1E", "description": "Pull requests that update a dependency file" },
+    { "name": "🤔 question", "color": "FBCA04", "description": "Further information is requested" },
+    { "name": "🆘 help wanted", "color": "FBCA04", "description": "Extra attention is needed" },
+    { "name": "🆕 good first issue", "color": "0E8A16", "description": "Good for newcomers" },
+    { "name": "✅ needs testing", "color": "A7F14D", "description": "Issue needs verification" },
+    { "name": "❌ duplicate", "color": "cfd3d7", "description": "This issue or pull request already exists" },
+    { "name": "❌ invalid", "color": "D93F0B", "description": "This doesn't seem right" },
+    { "name": "❌ wontfix", "color": "B60205", "description": "This will not be worked on" }
+  ],
+
+  "extra": {
+    "builds": [
+      {
+        "name": "📦 upload artifacts",
+        "color": "5319E7",
+        "description": "Attach this pull request's build to the run and comment with the download table"
+      }
+    ],
+    "fork": [
+      { "name": "🔼 upstream", "color": "f9d0c4", "description": "Refers to the upstream project" },
+      { "name": "🟢 accepted", "color": "0E8A16", "description": "Accepted for work" },
+      { "name": "🎉 resolved", "color": "006b75", "description": "This feature was delivered or fixed" },
+      { "name": "ℹ️ needs info", "color": "92c34b", "description": "Requires gathering some more info" },
+      { "name": "🚫 unsupported", "color": "d93f0b", "description": "This version is no longer supported" }
+    ],
+    "monorepo": [
+      { "name": "🖥️ frontend", "color": "1D76DB", "description": "Meridian and the shared UI package" },
+      { "name": "🛰️ backend", "color": "B7410E", "description": "Azimuth and Beacon Workers" },
+      { "name": "🗃️ database", "color": "5319E7", "description": "D1 schemas and Drizzle migrations" }
+    ]
+  },
+
+  "renames": {
+    "bug": "🐛 bug",
+    "enhancement": "🔧 enhancement",
+    "🔧 enchantment": "🔧 enhancement",
+    "🔧 feature": "🔧 enhancement",
+    "documentation": "📝 documentation",
+    "docs": "📝 documentation",
+    "duplicate": "❌ duplicate",
+    "invalid": "❌ invalid",
+    "wontfix": "❌ wontfix",
+    "question": "🤔 question",
+    "help wanted": "🆘 help wanted",
+    "good first issue": "🆕 good first issue",
+    "renovate": "🔄 dependencies",
+    "🦀 backend": "🛰️ backend",
+    "performance": "⚡ performance",
+    "security": "🔒 security",
+    "upstream": "🔼 upstream",
+    "status: accepted": "🟢 accepted",
+    "status: resolved": "🎉 resolved",
+    "status: need more info": "ℹ️ needs info",
+    "unsupported": "🚫 unsupported"
+  },
+
+  "repositories": {
+    ".github": [],
+    "code": ["monorepo"],
+    "DivineMC": ["builds", "fork"],
+    "irori": ["builds"],
+    "NDailyRewards": ["builds"],
+    "Nexon": ["builds"],
+    "Nyx": ["builds"],
+    "Quark": ["builds"],
+    "Vanilla-Reimagined": ["builds"]
+  }
+}

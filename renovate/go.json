@@ -1,0 +1,18 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Renovate policy for BX Team Go repositories",
+  "extends": ["github>BX-Team/.github//renovate/default"],
+  "enabledManagers": ["gomod", "github-actions", "nix"],
+  "postUpdateOptions": ["gomodTidy"],
+  "packageRules": [
+    {
+      "matchManagers": ["gomod"],
+      "groupName": "go dependencies"
+    },
+    {
+      "description": "The `go` directive is a language floor we pick deliberately, not a dependency.",
+      "matchDepTypes": ["golang"],
+      "enabled": false
+    }
+  ]
+}

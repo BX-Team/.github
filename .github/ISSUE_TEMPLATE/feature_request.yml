@@ -1,0 +1,38 @@
+name: Feature request
+description: Suggest something the project should do
+labels: ["🔧 enhancement"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Good feature requests describe a problem before they describe a solution —
+        that is what lets us find an answer you had not thought of.
+
+        For anything open-ended, [Discord](https://discord.gg/qNyybSSPm5) is a better
+        place to think it through first.
+
+  - type: textarea
+    attributes:
+      label: The problem
+      description: What are you trying to do that the project makes hard or impossible today?
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: What you would like it to do
+      description: Your proposed solution, in as much detail as you have.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Alternatives you have considered
+      description: Other approaches, other tools, or the workaround you are using now.
+
+  - type: checkboxes
+    attributes:
+      options:
+        - label: I searched the existing issues and this has not been requested
+          required: true
